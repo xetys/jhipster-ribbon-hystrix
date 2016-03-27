@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-hystrix:1.1.0.M5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-hystrix/1.1.0.M5/ca00d99234a1081ea9a692c67c017c211227486f/spring-cloud-starter-hystrix-1.1.0.M5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-hystrix/1.1.0.M5/a1a3b197349211ead2400e44bf01e88d0c275028/spring-cloud-starter-hystrix-1.1.0.M5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: fr.ippon.spark.metrics:metrics-spark-reporter:1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/fr.ippon.spark.metrics/metrics-spark-reporter/1.2/ee52961682bd5e4012b14d7733f6d9b0fccb8236/metrics-spark-reporter-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/fr.ippon.spark.metrics/metrics-spark-reporter/1.2/bdf21afb1845cdf5cdafa3945d0f735770644329/metrics-spark-reporter-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

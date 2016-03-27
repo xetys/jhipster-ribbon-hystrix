@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.gatling.highcharts:gatling-charts-highcharts:2.1.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.gatling.highcharts/gatling-charts-highcharts/2.1.7/7e1ad9cc7212a1c9d712d381e2aa4c4b66d1fb6f/gatling-charts-highcharts-2.1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.gatling.highcharts/gatling-charts-highcharts/2.1.7/1f42bd09372d5cbe6c99e969f33e5f4f5f35b84a/gatling-charts-highcharts-2.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

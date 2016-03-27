@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.ribbon:ribbon-transport:2.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon-transport/2.1.0/68fbfce8990c96c666ff085380c8964e431f9466/ribbon-transport-2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon-transport/2.1.0/2670b5bb8f51795d3bf62577ed5db114bed41723/ribbon-transport-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

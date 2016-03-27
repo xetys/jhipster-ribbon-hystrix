@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-eureka-client:1.1.0.M5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-client/1.1.0.M5/9084f7b68242a3862fb26969645f00ceb047756e/spring-cloud-netflix-eureka-client-1.1.0.M5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-client/1.1.0.M5/4317d436cac79020b4faa534bd1887bfd1747bb2/spring-cloud-netflix-eureka-client-1.1.0.M5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

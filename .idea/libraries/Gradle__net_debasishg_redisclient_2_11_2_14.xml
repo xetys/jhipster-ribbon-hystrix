@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.debasishg:redisclient_2.11:2.14">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.debasishg/redisclient_2.11/2.14/daba3247ebed45ff9b1ad242074fb011b4c0bc23/redisclient_2.11-2.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.debasishg/redisclient_2.11/2.14/86dcd1c795316a6dc1f783ccd2f49ebe47bba0c2/redisclient_2.11-2.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

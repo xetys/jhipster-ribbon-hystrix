@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.zuul:zuul-core:1.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.zuul/zuul-core/1.1.0/3b863d43ccc5fd84890418bc61f6cccdb53569e5/zuul-core-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.zuul/zuul-core/1.1.0/5a679a4279d1a582e9515c0b32536a7ffdf361ea/zuul-core-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

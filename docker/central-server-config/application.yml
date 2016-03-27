@@ -1,0 +1,16 @@
+#common configuration shared between all applications
+configserver:
+    status: ${spring.cloud.config.uri}/${spring.cloud.config.label}/${spring.cloud.config.name}-${spring.cloud.config.profile}.yml
+jhipster:
+    security:
+        authentication:
+            jwt:
+                secret: 6f9b1bfad22b529bc320d782e443611e5ca6b50b
+    logging:
+        logstash: # forward logs to ELK
+            enabled: true
+            host: elk-logstash
+    metrics:
+        logs: # report metrics in the logs
+            enabled: true
+            reportFrequency: 60 # in seconds

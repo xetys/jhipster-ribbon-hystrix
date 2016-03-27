@@ -1,0 +1,11 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "bar-service",
+      "foo-service",
+      "gateway"
+    ],
+    "useElk": true,
+    "jwtSecretKey": "6f9b1bfad22b529bc320d782e443611e5ca6b50b"
+  }
+}
