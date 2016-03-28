@@ -8,7 +8,7 @@
     Account.$inject = ['$resource'];
 
     function Account ($resource) {
-        var service = $resource('api/account', {}, {
+        var service = $resource('jhipsteruaa/api/account', {}, {
             'get': { method: 'GET', params: {}, isArray: false,
                 interceptor: {
                     response: function(response) {

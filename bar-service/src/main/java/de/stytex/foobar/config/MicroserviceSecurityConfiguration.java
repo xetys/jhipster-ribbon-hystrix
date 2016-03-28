@@ -16,46 +16,37 @@ import org.springframework.security.data.repository.query.SecurityEvaluationCont
 import de.stytex.foobar.security.AuthoritiesConstants;
 import de.stytex.foobar.security.jwt.JWTConfigurer;
 import de.stytex.foobar.security.jwt.TokenProvider;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
+import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 @Configuration
-@EnableWebSecurity
+@EnableResourceServer
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
-public class MicroserviceSecurityConfiguration extends WebSecurityConfigurerAdapter {
+public class MicroserviceSecurityConfiguration extends ResourceServerConfigurerAdapter {
 
     @Inject
-    private TokenProvider tokenProvider;
+    JHipsterProperties jHipsterProperties;
 
     @Override
-    public void configure(WebSecurity web) throws Exception {
-        web.ignoring()
-            .antMatchers(HttpMethod.OPTIONS, "/**")
-            .antMatchers("/api/**")     //FOR TESTING!
-            .antMatchers("/app/**/*.{js,html}")
-            .antMatchers("/bower_components/**")
-            .antMatchers("/i18n/**")
-            .antMatchers("/content/**")
-            .antMatchers("/swagger-ui/index.html")
-            .antMatchers("/test/**")
-            .antMatchers("/h2-console/**");
-    }
-
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    public void configure(HttpSecurity http) throws Exception {
         http
             .csrf()
             .disable()
             .headers()
             .frameOptions()
             .disable()
-        .and()
+            .and()
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-        .and()
+            .and()
             .authorizeRequests()
 
             .antMatchers("/api/logs/**").hasAuthority(AuthoritiesConstants.ADMIN)
-            .antMatchers("/api/**").permitAll() //FOR TESTING!
-            //.antMatchers("/api/**").authenticated()
+            .antMatchers("/api/**").hasAuthority(AuthoritiesConstants.ADMIN)
+            //.antMatchers("/api/**").permitAll()         //for testing
             .antMatchers("/metrics/**").permitAll()
             .antMatchers("/health/**").permitAll()
             .antMatchers("/trace/**").permitAll()
@@ -71,18 +62,20 @@ public class MicroserviceSecurityConfiguration extends WebSecurityConfigurerAdap
             .antMatchers("/v2/api-docs/**").permitAll()
             .antMatchers("/configuration/security").permitAll()
             .antMatchers("/configuration/ui").permitAll()
-            .antMatchers("/protected/**").authenticated()
-        .and()
-            .apply(securityConfigurerAdapter());
+            .antMatchers("/protected/**").authenticated();
 
-    }
-
-    private JWTConfigurer securityConfigurerAdapter() {
-        return new JWTConfigurer(tokenProvider);
     }
 
     @Bean
-    public SecurityEvaluationContextExtension securityEvaluationContextExtension() {
-        return new SecurityEvaluationContextExtension();
+    public TokenStore tokenStore() {
+        return new JwtTokenStore(jwtAccessTokenConverter());
+    }
+
+    @Bean
+    public JwtAccessTokenConverter jwtAccessTokenConverter() {
+        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+        converter.setSigningKey(jHipsterProperties.getSecurity().getAuthentication().getJwt().getSecret());
+
+        return converter;
     }
 }

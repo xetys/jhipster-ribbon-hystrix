@@ -1,6 +1,7 @@
 {
   "generator-jhipster": {
     "appsFolders": [
+      "auth-service",
       "bar-service",
       "foo-service",
       "gateway"

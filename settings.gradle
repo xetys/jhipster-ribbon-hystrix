@@ -1,3 +1,4 @@
 include 'foo-service'
 include 'bar-service'
+include 'auth-service'
 include 'gateway'

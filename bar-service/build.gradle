@@ -185,6 +185,10 @@ dependencies {
 
     optional group: 'org.springframework.boot', name:'spring-boot-configuration-processor', version: spring_boot_version
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
+
+
+    compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2'
+    compile group: 'org.springframework.security', name: 'spring-security-jwt'
 }
 
 compileJava.dependsOn(processResources)
